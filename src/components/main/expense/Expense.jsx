@@ -4,10 +4,6 @@ import { HiDotsHorizontal } from "react-icons/hi";
 import "../../../styles/expense/_expense.scss";
 
 const Expense = ({ expenseData }) => {
-  // const [expense, setExpense] = useState({});
-
-  const expenseContext = createContext();
-
   console.log(expenseData)
 
   return (

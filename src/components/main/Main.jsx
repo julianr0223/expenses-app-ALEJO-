@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaPlusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../../styles/main/_main.scss";
 import getExpenses from "./expense-service";
 import Expense from "./expense/Expense";
-
-
 
 const Main = () => {
 

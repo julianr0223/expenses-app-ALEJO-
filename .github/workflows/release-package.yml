@@ -2,9 +2,9 @@ name: Node.js Package
 
 on:
   push:
-    branches: [ master ]
-  release:
-    types: [created]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
+      - run: npm run build --if-present
       - run: npm test
 
   publish-gpr:
